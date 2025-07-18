@@ -1,4 +1,46 @@
 @import "tailwindcss";
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #F8F9FA;
+}
+
+.plugin-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 380px;
+    margin: auto;
+    border: 1px solid #e0e0e0;
+}
+
+.results-container {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.app-card {
+    transition: background-color 0.2s ease-in-out, border-color 0.2s;
+}
+
+.app-card:hover {
+    background-color: #EFF6FF;
+}
+
+.action-button {
+    transition: background-color 0.2s ease-in-out, opacity 0.2s;
+}

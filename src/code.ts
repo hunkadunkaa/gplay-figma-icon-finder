@@ -1,5 +1,5 @@
 figma.showUI(__html__, {
-    width: 380, height: 600, title: "Play Store Icon Finder",
+    width: 380, height: 650, title: "Play Store Icon Finder",
 });
 
 figma.ui.onmessage = async (msg) => {
